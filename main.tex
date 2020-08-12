@@ -4,6 +4,13 @@
 \def\Pr{\mathop{\rm Pr}}
 \usepackage[landscape,margin=1cm]{geometry}
 \usepackage[english]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
 
 \usepackage{multicol}
 % colour themes to come. KnitR?
@@ -29,8 +36,9 @@
 
 
 %\section{Data Type}
-\section*{Probability and Statistical Inference \\ MATH4001}
-\subsection*{Cheat Sheet}
+\section*{Probability and Statistical Inference}
+\subsection*{\href{https://sites.google.com/dit.ie/math4001
+}{Course} Cheat Sheet}
 \subsubsection*{\href{johnsbutler.netlify.com}{John S Butler}(TU Dublin) }
 
 \begin{textbox}{Data Type}
@@ -283,7 +291,7 @@ where $\bar{x}$ is the observed mean, $\mu_0$ is the null mean, $s$ is the stand
 \end{subbox}
 \begin{subbox}{subbox}{unpaired t-test}
 The test statistic is given by
-\[ t={\frac {{\bar {x}}_{1}-{\bar {x}}_{2}}{s_{p}{\sqrt {\frac {2}{n}}}}} \sim t_{\alpha,df}\]
+\[ t={\frac {{\bar {x}}_{1}-{\bar {x}}_{2}}{s_{p}{\sqrt {\frac {1}{n_1}+\frac{1}{n_2}}}}} \sim t_{\alpha,df}\]
  where
 $s_{p}={\sqrt{\frac {s_{x_{1}}^{2}+s_{x_{2}}^{2}}{2}}}$ is the pooled sample standard deviation, $\bar{x}_1$ and $\bar{x}_2$ are the sample means, $n_1$ and $n_2$ are the sample sizes.
 \end{subbox}
@@ -360,17 +368,18 @@ The model predicts that at the half-way line (50m) Sexton has a  $0.375$ probabi
 
 \end{subbox}
 \end{textbox}
-\begin{textbox}{References}
+\begin{textbox}{Bibliography}
 \begin{enumerate}
 \item 
 Devore \& Peck  - Statistics: The exploration and analysis of data (2011)
+\item James, G., Witten, D., Hastie, T., \& Tibshirani, R. (2013). An introduction to statistical learning (Vol. 112, p. 18). New York: springer. 
+\href{http://faculty.marshall.usc.edu/gareth-james/ISL/}{book website}
+\item Poldrack R. Statistical Thinking in the 21st Century 2020 \href{https://statsthinking21.github.io/statsthinking21-core-site/index.html}{website}
 \item
 Gareth, J, et al. - An introduction to statistical learning. Vol. 112. New York: Springer, 2013.
 \item
 Fry, H. - Hello World: How to be Human in the Age of the Machine, Doubleday, 2018
-\item Butler, J. S., Course GitHub, https://github.com/john-s-butler-dit/Probability\_and
-\_Statistical\_Inference
-\item Butler, J. S., Probability and Statistical Inference website https://sites.google.com/dit.ie/math4001
+\item Butler, J. S., \href{https://github.com/john-s-butler-dit/Probability_and_Statistical_Inference}{Course GitHub Repository}  
 
 \end{enumerate}
 
